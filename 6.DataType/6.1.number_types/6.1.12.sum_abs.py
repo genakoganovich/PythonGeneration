@@ -1,0 +1,1 @@
+print(sum(list(map(abs, list(map(float, [input() for _ in range(5)]))))))

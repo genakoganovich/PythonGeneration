@@ -1,0 +1,1 @@
+print('NO' if int(input()) % 100 else 'YES')
