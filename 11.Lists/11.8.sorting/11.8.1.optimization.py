@@ -6,13 +6,18 @@ a = [17, 24, 91, 96, 67, -27, 79, -71, -71, 58, 48, 88, 88, -16, -78, 96, -76, 5
 
 n = len(a)
 
-for i in range(n - 1):
-    no_swap = True
-    for j in range(n - i - 1):
-        if a[j] > a[j + 1]:
-            a[j], a[j + 1] = a[j + 1], a[j]
-            no_swap = False
-    if no_swap:
-        break
+
+def sort_bubble(arr, arr_len):
+    for i in range(arr_len - 1):
+        no_swap = True
+        for j in range(arr_len - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+                no_swap = False
+        if no_swap:
+            break
+
+
+sort_bubble(a, n)
 
 print(a)
