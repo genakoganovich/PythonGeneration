@@ -38,4 +38,3 @@ for row in char_info:
 
 
 print(*[generate_password(pass_length, chars) for _ in range(n)], sep='\n')
-
